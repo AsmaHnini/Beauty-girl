@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Makeup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="makeup.html">Makeup</a></li>
+    <li><a href="parfum.html">parfum</a></li>
+    
+    <li><a href="accessoires.html">Accessoires</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+  </ul>
+</nav>
+
+<h2>Makeup </h2>
+
+<div class="products">
+  <div class="card" onclick="showInfo('Rouge à lèvres - France 🇫🇷')">
+    <img src="https://media.sephora.eu/content/dam/digital/pim/published/D/DIOR/P10061111/103698-media_1.jpg?scaleWidth=undefined&scaleHeight=undefined&scaleMode=undefined">
+    <h3>Rouge à lèvres</h3>
+    <p>120 DH</p>
+  </div>
+
+  <div class="card" onclick="showInfo('Mascara - Italy 🇮🇹')">
+    <img src="https://beautypalast.ch/images/products/27933_1_essence_cosmetics_Lash_Without_Limits_Extreme_Lengthening__Volume_Mascara.jpg">
+    <h3>Mascara</h3>
+    <p>150 DH</p>
+  </div>
+  <div class="card" onclick="showInfo('Mascara - Italy 🇮🇹')">
+    <img src="https://i.pinimg.com/originals/75/b4/3f/75b43f8070a980ba22bdcfad82e0398f.jpg">
+    <h3>blush</h3>
+    <p>100 DH</p>
+  </div>
+   <div class="card" onclick="showInfo('Mascara - Italy 🇮🇹')">
+    <img src="https://i.pinimg.com/originals/5c/24/91/5c2491a3bdbb8931737cb1b23970c59e.jpg">
+    <h3>fond de teint</h3>
+    <p>300 DH</p>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p id="popup-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
